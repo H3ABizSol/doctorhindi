@@ -1,0 +1,55 @@
+.patient-info-section{
+    h3{
+        text-align: center;
+        margin-top: 1.2rem;
+        font-size: 5rem;
+    }
+    .patient-content{
+        width: 95%;
+        margin: 2rem auto;
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        .items{
+            width: 420px;
+            border: none;
+            padding: 2rem 0.5rem;
+            border: 1px solid rgb(232, 230, 230);
+            .actions{
+                display: flex;
+                align-items: center;
+                gap: 1.8rem;
+                justify-content: end;
+            }
+            h3{
+                text-align: center;
+                font-size: 1.6vw;
+                text-transform: capitalize;
+                margin-bottom: 2.5rem;
+                @media screen and (max-width:768px) {
+                       font-size: 1.8rem;
+                }
+            }
+            .links-wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                align-items: center;
+                margin-top: 1.2rem;
+                a{
+                    border-radius: 10px;
+                    width: 80%;
+                    background-color: #8b2628;
+                    padding: 0.8rem 2rem;
+                    font-size: 1.6rem;
+                    line-height: 2.5rem;
+                    text-align: justify;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+   
+}

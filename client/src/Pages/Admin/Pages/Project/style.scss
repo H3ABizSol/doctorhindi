@@ -1,0 +1,130 @@
+.project-wrapper{
+    h2{
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        @media screen and (max-width:768px) {
+            margin-top: 2rem;
+       }
+    }
+    form{
+       width: 80%;
+    //    min-height: 450px; 
+       margin: 0.8rem auto;
+    //    box-shadow: 0 0 15px rgb(218, 216, 216);
+       padding: 1rem 0.4rem;
+       display: flex;
+       flex-direction: column;
+       gap: 2rem;
+       @media screen and (max-width:768px) {
+         width: 90%;
+         margin-top: 2rem;
+     
+   }
+       .input-area{
+        display: flex;
+        gap: 2rem;
+        input,textarea,select{
+            width: 100%;
+            margin: auto;
+            padding: 1.4rem 0.8rem;
+            border: 1px solid rgb(155, 205, 81);
+            outline: none;
+        }
+        option{
+            font-size: 1.5rem;
+        }
+       }
+
+       button{
+        background-color: rgb(104, 185, 190);
+        width: 10%;
+        outline: none;
+        border: none;
+        padding: 0.5rem 0;
+        color: white;
+        font-size: 1.5rem;
+        @media screen and (max-width:768px) {
+            width: 100%;
+       }
+
+       }
+    }
+    .content{
+        width: 90%;
+        margin: 4rem auto;
+        display: flex;
+        gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .items{
+            width: 320px;
+            min-height: 280px;
+            box-shadow: 0 0 4px rgb(206, 204, 204);
+            word-break: break-all;
+            .btn-container{
+                display: flex;
+                justify-content: end;
+                gap: 1rem;
+                padding: 0.5rem 0.6rem;
+            }
+            h2{
+                text-align: center;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                letter-spacing: 0.4rem;
+                height: 18px;
+                overflow: hidden;
+            }
+            h4{
+                font-size: 1.3rem;
+                font-weight: 400;
+                height: 50px;
+                overflow: hidden;
+                padding: 0 0.5rem;
+                height:  50px;
+                overflow: hidden;
+            }
+            figure{
+                width: 95%;
+                margin: 1.2rem auto;
+                height: 120px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .modal{
+        position: fixed;
+        width: 100vw;
+        top:-20%;
+        left: 0;
+        display: flex; 
+        justify-content: center;
+        z-index: 999;
+        backdrop-filter: blur(2px);
+      
+        .form-container{
+            width: 80%;
+            height: 700px;
+            overflow: auto;
+            margin-top: 15rem;
+            background-color: rgb(245, 243, 243);
+            padding: 0rem 2rem;
+            @media screen and (max-width:768px) {
+                width: 95%;
+               height: 650px;
+           }
+            h5{
+              font-size: 2rem;
+              text-align: end;
+              cursor: pointer;
+            }
+        }
+    }
+}

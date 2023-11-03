@@ -1,0 +1,241 @@
+@import "../../App/App.scss";
+
+header{
+    background-color: rgb(245, 244, 251);
+    display: flex;
+    nav{
+         display: flex;
+         flex-direction: column;
+         gap: 4rem;
+         width: 90%;
+         margin: 0 auto;
+         padding: 1.2rem 0;
+      
+         @media screen and (max-width:1166px){
+                width: 100%;
+                gap: 1rem;
+                padding: 1.2rem;
+
+           }
+         .left{
+            display: flex;
+             justify-content: center;
+             @media screen and (max-width:1166px){
+            
+             
+          }
+             .logo-container{
+                h2{
+                    font-size: 1.5vw;
+                    letter-spacing: 0.4rem;
+                    text-transform: capitalize;
+                    display: flex;
+                    align-items: center;
+                    gap: 2.5rem;
+                 
+                    @media screen and (max-width:1166px){
+                        word-break: break-all;
+                        font-size: 1.5rem;
+                        letter-spacing: 0.1rem;
+                        padding: 0 1rem;
+                        .home-icon{
+                            font-size: 6rem;
+                        }
+                  }
+                }
+             }
+            .ham-burger{
+                width: 50%;
+                display: none;
+                @media screen and (max-width:1166px){
+                      display: block;
+                      width: 50%;
+                      text-align: end;
+                   
+                }
+             }
+         
+         }
+         .bottom{
+            display: flex;
+            align-items: center;
+            .mid{
+               width: 60%;
+               @media screen and (max-width:1166px){
+                 display: none;
+                }
+               ul{
+                   display: flex;
+                   gap: 2rem;
+                   // justify-content: center;
+                   li{
+                       font-size: 1.5rem;
+                       font-weight: 600;
+                       text-transform: uppercase;
+                       letter-spacing: 0.1rem;
+                       position: relative;
+                       @media screen and (max-width:1427px){
+                           font-size: 1rem;
+                        }
+                       .sub-menu-ul{
+                           display: none;
+                           position: absolute;
+                           width: 180px;
+                           padding: 1rem 2rem;
+                           background-color: rgb(246, 244, 246);
+                           top: 1.6rem;
+                           left: 0;
+                           z-index: 2;
+                           transition: all 0.5s linear;
+                           animation: downslide 0.5s forwards ;
+                           @keyframes downslide {
+                                0%{
+                                   margin-top: -4rem;
+                                }
+                                100%{
+                                   margin-top: 0rem;
+                                }
+                           }
+                     
+                       }
+                       &:hover > .sub-menu-ul{
+                           display: flex;
+                           flex-direction: column;
+                           gap: 2rem;
+                           li{
+                               font-size: 1.5rem;
+                               text-transform: capitalize;
+                               font-weight: 600;
+                               color: rgb(57, 71, 136);
+                           }
+                 
+                       }
+                   }
+               }
+            
+            }
+            .right{
+               position: relative;
+               width: 40%;
+               display: flex;
+               justify-content: space-evenly;
+               align-items: center;
+               gap: 0.5rem;
+               @media screen and (max-width:1166px){
+                     width: 100%;
+               }
+               input{
+                   padding: 1.3rem 1.5rem;
+                   width: 100%;
+                   outline: none;
+                   border-radius: 25px;
+                   border: 1px solid rgb(83, 149, 129);
+                   @media screen and (max-width:768px){
+                     
+                 }
+               }
+            }
+            .search-content{
+               position: absolute;
+               width: 90%;
+               background-color: rgb(243, 241, 241);
+               top: 100%;
+               left: 2%;
+               z-index: 10;
+               ul{
+                   display: flex;
+                   flex-direction: column;
+                   gap: 0.5rem;
+                   a{
+                       text-decoration: none;
+                       color: black;
+                   }
+                   li{
+                       font-size: 1.6rem;
+                        padding: 0.5rem 1.5rem;
+   
+                       &:hover{
+                           background-color: rgb(196, 184, 184);
+                           transition: 200ms all ;
+                           cursor: pointer;
+                       }
+                   }
+               }
+            }
+            button{
+               outline: none;
+               padding: 0.2rem 2rem;
+               cursor: pointer;
+            }
+         }
+   
+    }
+    .mobile-navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+        z-index: 9999;
+        display: flex;
+        animation: anime 0.2s linear alternate;
+         @keyframes anime {
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(0);
+            }
+         }
+         ul{
+            display: flex;
+            gap: 4.5rem;
+            flex-direction: column;
+             padding: 2rem 2rem;
+            li{
+                font-size: 1.6rem !important;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+                position: relative;
+                @media screen and (max-width:1427px){
+                    font-size: 1rem;
+                 }
+                .sub-menu-ul{
+                    display: none;
+                    position: absolute;
+                    width: 180px;
+                    padding: 1rem 2rem;
+                    background-color: rgb(246, 244, 246);
+                    top: 0.4rem;
+                    left: 70%  ;
+                    z-index: 2;
+                    transition: all 0.5s linear;
+                    animation: downslide 0.5s forwards ;
+                    @keyframes downslide {
+                         0%{
+                            margin-top: -4rem;
+                         }
+                         100%{
+                            margin-top: 0rem;
+                         }
+                    }
+              
+                }
+                &:hover > .sub-menu-ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    li{
+                        font-size: 1rem !important;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        color: rgb(57, 71, 136);
+                    }
+          
+                }
+            }
+        }
+    }
+}

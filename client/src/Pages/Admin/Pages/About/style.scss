@@ -1,0 +1,81 @@
+.about-wrapper{
+   min-height: 100vh;
+   h3{
+      text-align: center;
+      margin-top: 3.2rem;
+      font-size: 3.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      
+   }
+     .about-form-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 4rem;
+      
+       form{
+          width: 60%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          @media screen and (max-width:768px) {
+            width: 90%;
+       }
+          .form-field{
+             display: flex;
+             gap: 1.2rem;
+             input,textarea,select{
+               width: 100%;
+               padding: 0.8rem 2rem;
+               border-radius: 4px;
+               outline: none;
+               border: 1px solid rgb(156, 154, 154);
+             }
+             option{
+               font-size: 1.6rem;
+               text-transform: capitalize;
+             }
+          }
+          .btn-container{
+            button{
+                background-color: rgb(63, 119, 156);
+                outline: none;
+                border: none;
+                padding: 1rem 2rem;
+                color: white;
+                font-size: 1.5rem;
+            }
+          }
+       }
+     }
+     .admin-about-preview{
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+      gap: 1.4rem;
+      .quote{
+         h4{
+            font-size: 2rem;
+            line-height: 4rem ;
+         }
+      }
+      .about-content{
+          pre{
+            font-size: 1.7rem;
+            line-height: 3.4rem;
+            text-wrap: wrap;
+            font-family: "Lato";
+          }
+      }
+      .video{
+         video{
+            width: 50%;
+         }
+      }
+     }
+}

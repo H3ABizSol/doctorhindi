@@ -1,0 +1,128 @@
+.appoitment-section{
+    .form-container{
+        width: 75%;
+        margin: 0 auto;
+        @media screen and (max-width:768px) {
+           width: 95%;
+       }
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-top: 2rem;
+            .input-area{
+               display: flex;
+               gap: 1.2rem;
+               input{
+                  padding: 1.5rem 2rem;
+                  width: 100%;
+                  outline: none;
+                  border: 1px solid black;
+                  font-size: 1.6rem;
+               }
+               button{
+                padding: 0.8rem 2rem;
+                background-color: rgb(48, 190, 143);
+                outline: none;
+                border: none;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+               }
+            }
+        }
+    }
+    .appoitment{
+        width: 85%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        @media screen and (max-width:768px) {
+            width: 95%;
+       }
+        .appoitment-items{
+            // border: 1px solid rgb(156, 153, 153);
+            width: 85%;
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 1.5rem 0;
+            box-shadow: 0 0 4px rgb(207, 206, 206);
+            @media screen and (max-width:768px) {
+                width: 100%;
+           }
+            .main-head{
+                font-size: 4rem;
+                text-align: center;
+                text-transform: uppercase;
+                @media screen and (max-width:768px) {
+                    font-size: 2rem;
+               }
+            }
+            h4{
+                background-color: transparent;
+                color: goldenrod;
+                font-size: 2rem;
+                font-weight: 400;
+                text-align: center;
+                @media screen and (max-width:768px) {
+                    font-size: 1.6rem;
+               }
+            }
+            h6{
+                text-align: center;
+                font-size: 2.4rem;
+                font-weight: 400;
+            }
+            .number{
+                display: flex;
+                flex-direction: column;
+                gap: 1.4rem;
+                align-items: center;
+                a{
+                    font-size: 1.6rem;
+                    text-decoration: none;
+                    color: rgb(25, 143, 206);
+                }
+            }
+            .btn-container{
+                display: flex;
+                justify-content: end;
+                gap: 2rem;
+                padding: 0 2rem;
+                .icon{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .modal{
+        position: fixed;
+        width: 100vw;
+        height: 110vh;
+        top: 0;
+        left: 0;
+        display: flex; 
+        justify-content: center;
+        // background-color: red;
+        z-index: 999;
+        // background-color: rgb(210, 210, 210);
+        backdrop-filter: blur(2px);
+        .form-container{
+            width: 50%;
+            height: fit-content;
+            margin-top: 15rem;
+            background-color: rgb(245, 243, 243);
+            padding: 2rem 2rem;
+            h5{
+              font-size: 2rem;
+              text-align: end;
+              cursor: pointer;
+            }
+        }
+    }
+}

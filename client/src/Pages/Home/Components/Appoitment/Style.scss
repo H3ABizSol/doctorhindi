@@ -1,0 +1,112 @@
+.user-appoitment{
+    display: flex;
+    align-items: start;
+    width: 95%;
+    margin: 0 auto;
+    @media screen and (max-width:768px){
+         flex-direction: column;
+    }
+    .left{
+        width: 70%;
+        @media screen and (max-width:768px){
+            width: 100%;
+            order: 2;
+           
+       }
+        .appoitment{
+            width: 95%;
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            .appoitment-items{
+                // border: 1px solid rgb(156, 153, 153);
+                width: 100%;
+                min-height: 450px;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding: 1.5rem 0;
+                box-shadow: 0 0 4px rgb(207, 206, 206);
+                .main-head{
+                    font-size: 4rem;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                h4{
+                    background-color: transparent;
+                    color: goldenrod;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    text-align: center;
+                }
+                h6{
+                    text-align: center;
+                    font-size: 2.4rem;
+                    font-weight: 400;
+                }
+                .number{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.4rem;
+                    align-items: center;
+                    a{
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                        color: rgb(25, 143, 206);
+                    }
+                }
+            }
+        }
+    }
+    .right{
+        @media screen and (max-width:768px){
+           width: 100%;
+           order: 1;
+           position: static;
+
+       }
+        width: 30%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+       form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        margin-top: 2rem;
+        box-shadow: 0 0 2px rgb(101, 101, 101);
+        padding: 1rem;
+        border-radius: 5px;
+        h3{
+            font-size: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+
+        }
+        .input-area{
+            input,textarea{
+                padding: 1.6rem 1.2rem;
+                border: 1px solid rgb(64, 112, 113);
+                border-radius: 4px;
+                width: 100%;
+                outline: none;
+            }
+        }
+        button{
+            background-color: rgb(49, 140, 145);
+            outline: none;
+            border: none;
+            width: 50%;
+            padding: 1.2rem 0;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+       }
+    }
+}

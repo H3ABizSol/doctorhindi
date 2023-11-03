@@ -1,0 +1,43 @@
+.live-section{
+    .form-container{
+        width: 75%;
+        margin: 0 auto;
+        @media screen and (max-width:768px) {
+            width: 95%;
+       }
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-top: 2rem;
+            .input-area{
+               display: flex;
+               gap: 1.2rem;
+               @media screen and (max-width:768px) {
+                flex-direction: column;
+           }
+               input{
+                  padding: 1.5rem 2rem;
+                  width: 100%;
+                  outline: none;
+                  border: 1px solid black;
+                  font-size: 1.6rem;
+               }
+               button{
+                padding: 0.8rem 2rem;
+                background-color: rgb(48, 190, 143);
+                outline: none;
+                border: none;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+               }
+            }
+        }
+    }
+    .live-admin{
+        width: 95%;
+        margin: 8rem auto;
+    }
+}

@@ -1,0 +1,20 @@
+.topics-wrapper{
+    width: 100%;
+  h2{
+    font-size: 5.4rem;
+    text-align: center;
+    margin-top: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    @media screen and (max-width:768px){
+      font-size: 3rem;
+ }
+  }
+    .topics-area{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: center;
+        margin-top: 6rem;
+    }
+}

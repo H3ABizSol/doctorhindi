@@ -1,0 +1,65 @@
+.admin-layout{
+    display: flex;
+    align-items: start;
+    width: 100%;
+    min-height:100vh;
+    @media screen and (max-width:768px) {
+         flex-direction: column;
+    }
+    .left-admin{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 20%;
+        min-height: 100vh;
+        background-color: rgb(79, 122, 117);
+        color: white;
+        z-index: 80;
+        @media screen and (max-width:768px) {
+            width: 100%;
+            position: static;
+            min-height: 200px;
+       }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            @media screen and (max-width:768px) {
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               gap: 0.2rem;
+           }
+            // background-color: red;
+            .link{
+                color: white;
+                li{
+                    padding: 1.4rem 1rem;
+                    font-size: 1.5rem;
+                    font-family: "Fredoka";
+                    display: flex;
+                    gap: 1.2rem;
+                    align-items: center;
+                    text-transform: uppercase;
+                    @media screen and (max-width:768px) {
+                       font-size: 1rem;
+                   }
+                    &:hover{
+                        background-color: rgb(49, 41, 52);
+                        transition: all 0.3s;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+    .right-admin{
+        width: 84%;
+        min-height: 100vh;
+        background: rgb(251, 246, 247);
+        @media screen and (max-width:768px) {
+            width: 100%;
+       }
+        // padding: 0.6rem 2rem;
+    }
+}

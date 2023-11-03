@@ -1,0 +1,55 @@
+.health-info-wrapper{
+    .search-wrapper{
+        width: 80%;
+        margin: 0 auto;
+        @media screen and (max-width:768px){
+              margin-top: 1.2rem;
+        }
+        input{
+            padding: 1.6rem 2rem;
+            width: 100%;
+            outline: none;
+        }
+    }
+    .health-contents{
+        width: 95%;
+        overflow: auto;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        // gap: 1.2rem;
+        background-color: rgb(246, 244, 244);
+        padding: 2rem 6rem;
+        h4{
+            font-size:2.6rem ;
+            margin:0.8rem 0 2rem 0;
+            border-bottom: 1px solid rgb(221, 218, 218);
+            color: rgb(208, 99, 22);
+        }
+        .items{
+            margin-top: 0.8rem;
+            h3{
+                font-size: 1.8rem;
+                text-transform: capitalize;
+            }
+            .links-wrapper{
+                display: flex;
+                flex-direction: column;
+                    a{
+                        font-size: 1.4rem;
+                        text-decoration: none;
+                        color: rgb(49, 77, 215); 
+                        text-transform: capitalize;
+                        li{
+                            list-style: disc;
+                            padding: 0.5rem 0;
+                        }
+    
+                    }
+
+                
+            }
+        }
+    }
+
+} 

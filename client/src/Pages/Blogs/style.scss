@@ -1,0 +1,115 @@
+.home-blog-wrapper{
+    .search-container{
+        position: relative;
+        width: 80%;
+        margin: 1.8rem auto;
+        @media screen and (max-width:768px) {
+           width: 95%;
+      }
+        input{
+            width: 100%;
+            padding: 2rem 1rem;
+            outline: none;
+        }
+        // .search-content{
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 222px;
+        //     background-color: red;
+        //     z-index: 10;
+        //     top: 100%;
+        // }
+
+    }
+    .blog-container{
+        width: 70%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @media screen and (max-width:768px) {
+            width: 95%;
+      }
+        .blog-items{
+            border: 1px solid rgb(229, 229, 229);
+            min-height: 360px;
+            @media screen and (max-width:768px) { 
+                min-height: 300px;
+          }
+        
+            .content{
+                display: flex;
+                gap: 2rem;
+                @media screen and (max-width:768px) {
+                   flex-direction: column;
+              }
+                .left{
+                    width: 40%;
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                       
+                  }
+                    figure{
+                        width: 100%;
+                        height: 360px;
+                        @media screen and (max-width:768px) {
+                            width: 95%;
+                            height: 150px;
+                            margin: auto;
+                      }
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                
+                }
+                .right{
+                    width: 60%;
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                      
+                  }
+                    h3{
+                        font-size: 2.6rem;
+                        padding: 0.8rem 0;
+                        @media screen and (max-width:768px) {
+                            font-size: 1.6rem;
+                      }
+                    }
+                    pre{
+                       text-wrap: wrap;
+                       font-size: 1.6rem;
+                       font-family: "Lato";
+                       text-align: justify;
+                       height:230px;
+                       overflow: hidden;
+                       padding: 0 1.2rem;
+                       margin-top: 2rem;
+                       @media screen and (max-width:768px) {
+                        height: 20px;
+                        font-size: 1.3rem;
+                  }
+                    }
+                    button{
+                        width: 30%;
+                        padding: 0.8rem 2rem;
+                        background: transparent;
+                        border: 1px solid black;
+                        margin-top: 1.2rem;
+                        cursor: pointer;
+
+                    }
+                }
+            }
+            .btn-container{
+                display: flex;
+                gap: 1.2rem;
+                padding: 0.8rem 1rem;
+                .icon{
+                    cursor: pointer;
+                }
+            }
+        }
+    } 
+}

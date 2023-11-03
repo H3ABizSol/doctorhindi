@@ -1,0 +1,108 @@
+.health-info-section{
+    .form-container{
+        width: 75%;
+        margin: 0 auto;
+        @media screen and (max-width:768px) {
+            width: 95%;
+       }
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-top: 2rem;
+            .input-area{
+               display: flex;
+               gap: 1.2rem;
+               @media screen and (max-width:768px) {
+                flex-direction: column;
+           }
+               input{
+                  padding: 1.5rem 2rem;
+                  width: 100%;
+                  outline: none;
+                  border: 1px solid black;
+                  font-size: 1.6rem;
+               }
+               button{
+                padding: 0.8rem 2rem;
+                background-color: rgb(48, 190, 143);
+                outline: none;
+                border: none;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+               }
+            }
+        }
+    }
+    .health-content{
+        width: 95%;
+        height: 860px;
+        overflow: auto;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        .items{
+            .actions{
+                display: flex;
+                align-items: center;
+                gap: 1.8rem;
+                justify-content: end;
+            }
+            h3{
+                font-size: 2rem;
+                text-transform: capitalize;
+            }
+            .links-wrapper{
+                margin-top: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                    a{
+                        padding: 0.8rem 2rem;
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                        color: rgb(49, 77, 215); 
+                        text-transform: capitalize;
+                        li{
+                            list-style: disc;
+                          
+                        }
+    
+                    }
+
+                
+            }
+        }
+    }
+    .modal{
+        position: fixed;
+        width: 100vw;
+        top: -12%;
+        left: 0;
+        display: flex; 
+        justify-content: center;
+        z-index: 999;
+        backdrop-filter: blur(2px);
+      
+        .form-container{
+            width: 80%;
+            height: 700px;
+            overflow: auto;
+            margin-top: 15rem;
+            background-color: rgb(245, 243, 243);
+            padding: 0rem 2rem;
+            @media screen and (max-width:768px) {
+                width: 95%;
+               height: 650px;
+           }
+            h5{
+              font-size: 2rem;
+              text-align: end;
+              cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+
+
+.signin-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(249, 214, 218),rgb(216, 216, 244));
+    .container{
+        width: 95%;
+        min-height: 660px;
+        display: flex;
+        .left{
+            position: relative;
+            width: 40%;
+            background-image: url("../../assets/doctor.avif");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 6px;
+            @media screen and (max-width:768px) {
+                 display: none;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(132, 78, 131);
+                top: 0;
+                opacity: 0.3;
+               border-radius: 6px;
+
+            }
+        }
+        .right{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width:768px) {
+                width: 100%;
+           }
+            form{
+                width: 70%;
+                min-height: 400px;
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+                box-shadow: 0 0 30px rgb(234, 206, 206);
+                background-color:transparent;
+                border-radius: 5px;
+                padding: 1rem;
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                    
+               }
+               p{
+                text-align: center;
+                color: rgb(248, 90, 90);
+                font-size: 1.3rem;
+               }
+                h2{
+                    text-align: center;
+                    font-size: 4rem;
+                }
+                .form-input{
+                      width: 70%;
+                      margin: 0 auto;
+                      position: relative;
+                      label{
+                        position: absolute;
+                        top: 1.4rem;
+                        left: 1rem;
+                        font-size: 1.4rem;
+                        text-transform: capitalize;
+                      }
+                      input{
+                        width: 100%;
+                        padding: 1.5rem 1.4rem;
+                        // border: 1px solid rgb(176, 219, 176);
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        border-bottom: 1px solid black;
+                        border: 1px solid rgb(176, 219, 176);
+                        &:valid ~ label,&:focus ~ label{
+                            position: absolute;
+                            top: -0.6rem;
+                            left: 0;
+                            transition: all 0.5s;
+                            color: gray;
+                            background-color: rgba(254, 255, 254, 0);
+                            transform: scale(0.7);
+                            background-color: #E6D7E8;
+                        } 
+                      }     
+                      .show-hide-pass{
+                        position: absolute;
+                        top: 25%;
+                        right: 2%;
+                      }        
+                }
+                .forgot-pass{
+                    width: 65%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: end;
+                    font-size: 1.2rem;
+                }
+                .btn-container{
+                     width: 50%;
+                     margin: 0 auto;
+                     
+                     button{
+                        background-color: rgb(250, 73, 103);
+                        outline: none;
+                        border: none;
+                        padding: 1.2rem 0;
+                        width: 100%;
+                        font-size: 1.8rem;
+                        color: white;
+                        border-radius: 30px;
+                        cursor: pointer;
+                     }
+                }
+            }
+        }
+
+    }
+}
